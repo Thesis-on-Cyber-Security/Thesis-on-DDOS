@@ -29,26 +29,28 @@
 ```bash
   conda update conda --all
 ```
-- To use same virtualenv as authors
-
-  edit `masum_ml_env.yml` file under `Project Configuration` folder
-
-  replace `prefix: C:\Users\Malware\anaconda3\envs\masum_ml_env` 
-  
-  with this `prefix: C:\Users\<your_pc_username>\anaconda3\envs\masum_ml_env`
-
-- Creating same virtualenv
+- To use same virtualenv as authors (platform: win64)
+```bash
+  Download 'conda-spec-file-masum.txt' file from this repo's 'Project Configuration' folder
+```
+- Create a new virtualenv identical to authors
 
 ```bash
-conda env create --file masum_ml_env.yml
+conda create --name masum_ml_env --file conda-spec-file-masum.txt
 ```
 
 - activate the newly created environment
 
 ```bash
+conda info --envs
 conda activate masum_ml_env
 ```
-    
+
+- Or, you can install author used packages into your own existing environment
+
+```bash
+ conda install --name <your_existing_env> --file conda-spec-file-masum.txt
+```
 ## Related Works
 
 Here are some related projects (list will be made soon)
