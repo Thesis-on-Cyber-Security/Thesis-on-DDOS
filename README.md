@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-**Tools :** Anaconda, DataSpell, Gogle Colab
+**Tools :** Anaconda, DataSpell, Google Colab
 
 **Library :** numba, fastai, tensorflow, scikit-learn
 
